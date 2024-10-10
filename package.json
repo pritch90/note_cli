@@ -1,0 +1,25 @@
+{
+  "name": "note_cli",
+  "version": "1.0.0",
+  "description": "CLI for taking notes",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pritch90/note_cli.git"
+  },
+  "bin": {
+    "task": "./bin/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pritch90/note_cli/issues"
+  },
+  "homepage": "https://github.com/pritch90/note_cli#readme",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
