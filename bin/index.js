@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
 const yargs = require('yargs');
+const { exec } = require('child_process');
+
 const fs = require('fs');
 
-const dir = "/Users/tom.pritchard/tasks"
+const dir = "$HOME/tasks"
 
 let actionTime = new Date();
 
@@ -44,5 +46,11 @@ function formatDate(date) {
 }
 
 function showTasks() {
-	console.log(fs.readFileSync(getFilename()));
+	exec(`cat ${getFilename()}`, (err, stdout, stderr) => {
+		if (err) {
+			console.error(err);
+		}
+
+		console.log(stdout);
+	});
 }
