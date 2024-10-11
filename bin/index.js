@@ -11,9 +11,9 @@ const dir = `${homedir}/tasks`
 let actionTime = new Date();
 
 const options = yargs
-		.scriptName('task')
+		.scriptName('note')
 		.usage("$0 <cmd> [args]")
-		.command('log [description...]', 'Log a task', (yargs) => {
+		.command('task [description...]', 'Log a task', (yargs) => {
 			yargs.positional('description', {
 				type: 'string',
 				describe: 'The task to log'

@@ -11,7 +11,7 @@
     "url": "git+ssh://git@github.com/pritch90/note_cli.git"
   },
   "bin": {
-    "task": "./bin/index.js"
+    "note": "./bin/index.js"
   },
   "author": "",
   "license": "ISC",
