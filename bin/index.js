@@ -2,10 +2,11 @@
 
 const yargs = require('yargs');
 const { exec } = require('child_process');
+const homedir = require('os').homedir();
 
 const fs = require('fs');
 
-const dir = "$HOME/tasks"
+const dir = `${homedir}/tasks`
 
 let actionTime = new Date();
 
